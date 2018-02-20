@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="form-wrapper reg">
+        <form method="POST" id="formx" action="javascript:void(null);" onsubmit="registerCall()">
+            <legend>Register</legend>
+            <div>
+                <input class="login-inp" name="login" value="" type="text" placeholder="Login" required>
+            </div>
+            <div>
+                <input class="password-inp" name="password" value="" type="password" placeholder="Password" required>
+            </div>
+            <div>
+                <input class="conf-password" name="conf-password" value="" type="password" placeholder="Confirm password" required>
+            </div>
+            <div>
+                <input class="email" name="email" value="" type="text" placeholder="Email" required>
+            </div>
+            <div>
+                <input class="name" name="name" value="" type="text" placeholder="name" required>
+            </div>
+            <input value="Send" class="send-button butt" type="submit" required>
+        </form>
+        <button class="register butt">Register</button>
+        <button class="login butt">Login</button>
+    </div>
+    
+    <div class="form-wrapper log">
+        <form method="POST" id="form2" action="javascript:void(null);" onsubmit="loginCall()">
+            <legend>Login</legend>
+            <div>
+                <input class="login-inp" name="login" value="" type="text" placeholder="Login" required>
+            </div>
+            <div>
+                <input class="password-inp" name="password" value="" type="password" placeholder="Password" required>
+            </div>
+            <input value="Send" class="send-button butt" type="submit" required>
+        </form>
+        <button class="register butt">Register</button>
+        <button class="login butt">Login</button>
+    </div>
+    
+    <div id="result-register"></div>
+    <div id="result-login"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
